@@ -1,0 +1,9 @@
+;; This file just (include)s all my layouts so they can be analyzed by the Kanata VSCode extension.
+
+(include common.kbd)
+
+(include ANSI_104_Colemak_DHVK.kbd)
+
+(include Dell_Precision_Colemak_DHVK.kbd)
+
+(include rk65_Colemak_DHVK.kbd)

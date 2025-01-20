@@ -1,0 +1,1 @@
+..\binary\kanata_gui.exe -c ..\config\rk65_Colemak_DHVK.kbd

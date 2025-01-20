@@ -1,0 +1,145 @@
+;; Common configuration items to be (include)ed in all my Kanata layouts.
+
+(defcfg
+	process-unmapped-keys yes
+)
+
+(defvar
+  tap-timeout   200
+  hold-timeout  250
+  tt $tap-timeout
+  ht $hold-timeout
+)
+
+(defalias
+;; Layer Actions
+	qwe		(layer-switch qwerty)
+	col		(layer-switch colemak)
+	elk		(layer-toggle extend)
+	ext		(layer-while-held	extend)
+	exs		(layer-while-held	extend_shift)
+
+;; Caps word
+	cap		(caps-word-toggle 5000)
+
+;; Tap-holds
+	spc_sft	(tap-hold-release $tt $ht spc lsft)
+	spc_ext (tap-hold-press $tt $ht spc @ext)
+	a_met	(tap-hold-release $tt $ht a lmet)
+	r_alt	(tap-hold-release $tt $ht r lalt)
+	s_ctl	(tap-hold-release $tt $ht s lctl)
+	t_sft	(tap-hold-release $tt $ht t lsft)
+	n_sft	(tap-hold-release $tt $ht n rsft)
+	e_ctl	(tap-hold-release $tt $ht e rctl)
+	i_alt	(tap-hold-release $tt $ht i ralt)
+	o_met	(tap-hold-release $tt $ht o rmet)
+	4_sft	(tap-hold-release $tt $ht 4 rsft)
+	5_ctl	(tap-hold-release $tt $ht 5 rctl)
+	6_alt	(tap-hold-release $tt $ht 6 ralt)
+	0_met	(tap-hold-release $tt $ht 0 rmet)
+	
+;; Shortcuts
+	top		C-home
+	s_top	C-S-home
+	bot		C-end
+	s_bot	C-S-end
+	undo	C-z
+	redo	C-S-z
+	cut		C-x
+	s_cut	C-S-x
+	copy	C-c
+	s_copy	C-S-c
+	paste	C-v
+	pst		@paste
+	s_pst	C-S-v
+	dup		C-d
+	s_dup	C-S-d
+
+;; Macros
+	000 (macro kp0 kp0 kp0)
+
+;; Custom Keys
+	lt		(fork S-, S-. (lsft rsft))
+
+;; Unicode
+	;; Numpad+Shift
+	plmn	(unicode ±)
+	sqrt	(unicode √)
+	inf		(unicode ∞)
+	diff	(unicode ∂)
+	mul		(unicode ×)
+	div		(unicode ÷)
+
+	;; Extend+Number Row
+	iexc	(unicode ¡)
+	ique	(unicode ¿)
+	gbp		(unicode £)
+	cent	(unicode ¢)
+	euro	(unicode €)
+	deg		(unicode °)
+	lte		(unicode ≤)
+	ndash	(unicode –)
+	mdash	(unicode —)
+	ibang	(unicode ‽)
+	micro	(unicode µ)
+
+	;; Extend+Shift+Number Row
+	s1		(unicode ¹)
+	s2		(unicode ²)
+	s3		(unicode ³)
+	s4		(unicode ⁴)
+	s5		(unicode ⁵)
+	s6		(unicode ⁶)
+	gte		(unicode ≥)
+	s7		(unicode ⁷)
+	s8		(unicode ⁸)
+	s9		(unicode ⁹)
+	s0		(unicode ⁰)
+	neq		(unicode ≠)
+)
+
+(defoverrides
+	(lsft .)(lsft ;)
+	(rsft .)(lsft ;)
+
+	(lsft ,)(;)
+	(rsft ,)(;)
+	
+	(-)(lsft -)
+	(lsft -)(-)
+	(rsft -)(-)
+	
+	([)(lsft 9)
+	(])(lsft 0)
+
+	(lsft 9)([)
+	(rsft 9)([)
+
+	(lsft 0)(])
+	(rsft 0)(])
+
+;; Keypad
+	(lsft kp4)(lsft d)
+	(rsft kp4)(lsft d)
+
+	(lsft kp5)(lsft e)
+	(rsft kp5)(lsft e)
+
+	(lsft kp6)(lsft f)
+	(rsft kp6)(lsft f)
+
+	(lsft kp1)(lsft a)
+	(rsft kp1)(lsft a)
+
+	(lsft kp2)(lsft b)
+	(rsft kp2)(lsft b)
+
+	(lsft kp3)(lsft c)
+	(rsft kp3)(lsft c)
+
+	(lsft kp.)(lsft ;)
+	(rsft kp.)(lsft ;)
+
+	(lsft kp-)(lsft -)
+	(rsft kp-)(lsft -)
+)

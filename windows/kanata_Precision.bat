@@ -1,0 +1,1 @@
+..\binary\kanata_gui.exe -c ..\config\Dell_Precision_Colemak_DHVK.kbd
