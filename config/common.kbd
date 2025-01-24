@@ -100,24 +100,34 @@
 )
 
 (defoverrides
-	(lsft .)(lsft ;)
-	(rsft .)(lsft ;)
-
-	(lsft ,)(;)
-	(rsft ,)(;)
-	
 	(-)(lsft -)
 	(lsft -)(-)
 	(rsft -)(-)
-	
-	([)(lsft 9)
-	(])(lsft 0)
 
-	(lsft 9)([)
-	(rsft 9)([)
+	(f13)(lsft 9)
+	(lsft f13)(lsft [)
+	(rsft f13)(rsft [)
 
-	(lsft 0)(])
-	(rsft 0)(])
+	(f14)(lsft 0)
+	(lsft f14)(lsft ])
+	(rsft f14)(rsft ])
+
+	(f15)(9)
+	(lsft f15)([)
+	(rsft f15)([)
+
+	(f16)(0)
+	(lsft f16)(])
+	(rsft f16)(])
+
+	(f17)(,)
+	(lsft f17)(;)
+	(rsft f17)(;)
+
+	(f18)(.)
+	(lsft f18)(lsft ;)
+	(rsft f18)(rsft ;)
+
 
 ;; Keypad
 	(lsft kp4)(lsft d)
