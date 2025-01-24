@@ -6,8 +6,8 @@
 	esc		f1	f2	f3	f4	f5		f6		f7		f8		f9		f10		f11		f12		home	end		del		calc	prev	pp		next
 	grv		1		2		3		4		5		6		7		8		9		0		-		=		bspc	nlk		kp/		kp*		kp-
 	tab		q		w		e		r		t		y		u		i		o		p		[		]		\		kp7		kp8		kp9		kp+
-	caps	a		s		d		f		g		h		j		k		l		;		'		ret				kp4		kp5		kp6
-	lsft	z		x		c		v		b		n		m		,		.		/		rsft					kp1		kp2		kp3		kprt
+	caps	a		s		d		f		g		h		j		k		l		;		'				ret		kp4		kp5		kp6
+	lsft	z		x		c		v		b		n		m		,		.		/						rsft	kp1		kp2		kp3		kprt
 	lctl	lmet	lalt					spc						ralt	rctl	pgup	up		pgdn			kp0				kp.
 																					lft		down	rght
 )
@@ -16,8 +16,8 @@
 	_		_	_	_	_	_		_		_		_		_		_		_		_		_		_		@qwe	_		_		_		_
 	_		_		_		_		_		_		_		_		_		_		_		_		_		_		bspc	_		_		_
 	_		_		_		_		_		_		_		_		_		_		_		_		_		_		_		_		_		_
-	_		_		_		_		_		_		_		_		_		_		_		_		_				_		_		_
-	_		_		_		_		_		_		_		_		_		_		_		_						_		_		_		_
+	_		_		_		_		_		_		_		_		_		_		_		_				_		_		_		_
+	_		_		_		_		_		_		_		_		_		_		_						_		_		_		_		_
 	_		_		_						_						_		_		_		_		_				_				_
 																					_		_		_
 )
@@ -26,8 +26,8 @@
 	esc		f1	f2	f3	f4	f5		f6		f7		f8		f9		f10		f11		f12		@elk	prnt	@qwe	calc	prev	pp		next
 	esc		1		2		3		4		5		6		@lt		7		8		9		0		=		@cap	caps	kp/		kp*		kp-
 	tab		q		w		f		p		b		[		j		l		u		y		z		/		del		kp7		kp8		kp9		kp+
-	bspc	@a_met	@r_alt	@s_ctl	@t_sft	g		]		m		@n_sft	@e_ctl	@i_alt	@o_met	ret				kp4		kp5		kp6
-	x		v		c		d		'		@copy	@paste	-		h		k		,		.						kp1		kp2		kp3		kprt
+	bspc	@a_met	@r_alt	@s_ctl	@t_sft	g		]		m		@n_sft	@e_ctl	@i_alt	@o_met			ret		kp4		kp5		kp6
+	x		v		c		d		'		@copy	@paste	-		h		k		,						.		kp1		kp2		kp3		kprt
 	lalt	lmet	lsft					@spc_ext				rsft	ralt	pgup	up		pgdn			kp0				kp.
 																					lft		down	rght
 )
@@ -36,8 +36,8 @@
 	_		_	_	_	_	_		_		_		_		_		_		_		_		_		_		_		_		_		_		_
 	_		@iexc	@ique	@gbp	@cent	@euro	@deg	@lte	@ndash	@mdash	@ibang	@micro	_		_		_		_		_		_
 	_		@top	home	up		end		pgup	_		kp+		7		8		9		kp*		\		_		_		_		_		_
-	_		@bot	lft		down	rght	pgdn	_		kp/		@4_sft	@5_ctl	@6_alt	@0_met	_				_		_		_
-	_		@undo	@cut	@copy	@paste	@dup	grv		kp-		1		2		3		kp.						_		_		_		_
+	_		@bot	lft		down	rght	pgdn	_		kp/		@4_sft	@5_ctl	@6_alt	@0_met			_		_		_		_
+	_		@undo	@cut	@copy	@paste	@dup	grv		kp-		1		2		3						kp.		_		_		_		_
 	_		_		@exs					_						@exs	_		_		_		_				_				_
 																					_		_		_
 )
@@ -46,8 +46,8 @@
 	_		_	_	_	_	_		_		_		_		_		_		_		_		_		_		_		_		_		_		_
 	_		@s1		@s2		@s3		@s4		@s5		@s6		@gte	@s7		@s8		@s9		@s0		@neq	_		_		_		_		_
 	_		@s_top	S-home	S-up	S-end	S-pgup	S-[		@plmn	@sqrt	@inf	@diff	@mul	S-\		_		_		_		_		_
-	_		@s_bot	S-lft	S-down	S-rght	S-pgdn	S-]		@div	S-d		S-e		S-f		@000	_				_		_		_
-	_		@redo	@s_cut	@s_copy	@s_pst	@s_dup	S-grv	S-kp-	S-a		S-b		S-c		S-kp.					_		_		_		_
+	_		@s_bot	S-lft	S-down	S-rght	S-pgdn	S-]		@div	S-d		S-e		S-f		@000			_		_		_		_
+	_		@redo	@s_cut	@s_copy	@s_pst	@s_dup	S-grv	S-kp-	S-a		S-b		S-c						S-kp.	_		_		_		_
 	_		_		_						_						_		_		_		_		_				_				_
 																					_		_		_
 )

@@ -5,39 +5,39 @@
 (defsrc
 	esc		1		2		3		4		5		6		7		8		9		0		-		=		bspc
 	tab		q		w		e		r		t		y		u		i		o		p		[		]		\		del
-	caps	a		s		d		f		g		h		j		k		l		;		'		ret				pgup
-	lsft	z		x		c		v		b		n		m		,		.		/		rsft			up		pgdn
+	caps	a		s		d		f		g		h		j		k		l		;		'				ret		pgup
+	lsft	z		x		c		v		b		n		m		,		.		/				rsft	up		pgdn
 	lctl	lmet	lalt					spc								ralt					lft		down	rght
 )
 
 (deflayer qwerty
 	_		_		_		_		_		_		_		_		_		_		_		_		_		_
 	_		_		_		_		_		_		_		_		_		_		_		_		_		_		_
-	_		_		_		_		_		_		_		_		_		_		_		_		_				_
-	_		_		_		_		_		_		_		_		_		_		_		_				_		@col
+	_		_		_		_		_		_		_		_		_		_		_		_				_		_
+	_		_		_		_		_		_		_		_		_		_		_				_		_		@col
 	_		_		_						_								_						_		_		_
 )
 
 (deflayer colemak
 	esc		1		2		3		4		5		6		@lt		7		8		9		0		=		@cap
 	tab		q		w		f		p		b		[		j		l		u		y		z		/		del		caps
-	bspc	@a_met	@r_alt	@s_ctl	@t_sft	g		]		m		@n_sft	@e_ctl	@i_alt	@o_met	ret				@elk
-	x		v		c		d		'		@copy	@paste	-		h		k		,		.				up		@qwe
+	bspc	@a_met	@r_alt	@s_ctl	@t_sft	g		]		m		@n_sft	@e_ctl	@i_alt	@o_met			ret		@elk
+	x		v		c		d		'		@copy	@paste	-		h		k		,				.		up		@qwe
 	lalt	lmet	lsft					@spc_ext						rsft					left	down	rght
 )
 
 (deflayer extend
 	_		f1		f2		f3		f4		f5		f6		f7		f8		f9		f10		f11		f12		prnt
 	_		@top	home	up		end		pgup	_		kp+		7		8		9		kp*		\		_		_
-	_		@bot	lft		down	rght	pgdn	_		kp/		@4_sft	@5_ctl	@6_alt	@0_met	_				_
-	_		@undo	@cut	@copy	@paste	@dup	grv		kp-		1		2		3		kp.				_		_
+	_		@bot	lft		down	rght	pgdn	_		kp/		@4_sft	@5_ctl	@6_alt	@0_met			_		_
+	_		@undo	@cut	@copy	@paste	@dup	grv		kp-		1		2		3				kp.		_		_
 	_		_		@exs					_								@exs					_		_		_
 )
 
 (deflayer extend_shift
 	_		@iexc	@ique	@gbp	@cent	@euro	@lte	@gte	@ndash	@mdash	@deg	@micro	@neq	_
 	_		@s_top	S-home	S-up	S-end	S-pgup	S-[		@plmn	@sqrt	@inf	@diff	@mul	S-\		_		_
-	_		@s_bot	S-lft	S-down	S-rght	S-pgdn	S-]		@div	S-d		S-e		S-f		@000	_				_
-	_		@redo	@s_cut	@s_copy	@s_pst	@s_dup	S-grv	@ndash	S-a		S-b		S-c		S-kp.			_		_
+	_		@s_bot	S-lft	S-down	S-rght	S-pgdn	S-]		@div	S-d		S-e		S-f		@000			_		_
+	_		@redo	@s_cut	@s_copy	@s_pst	@s_dup	S-grv	@ndash	S-a		S-b		S-c				S-kp.	_		_
 	_		_		_						_								_						_		_		_
 )
