@@ -2,7 +2,10 @@
 
 (defcfg
 	process-unmapped-keys yes
+	log-layer-changes yes
 	linux-dev /dev/input/event2:/dev/input/event3:/dev/input/event4:/dev/input/event5
+	tray-icon ..\assets\kanata.ico
+	icon-match-layer-name yes 
 )
 
 (defvar

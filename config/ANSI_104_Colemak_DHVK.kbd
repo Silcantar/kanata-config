@@ -20,7 +20,7 @@
 	_		_		_						_								_		_		_		_				_		_		_		_				_
 )
 
-(deflayer colemak
+(deflayer (colemak icon "..\assets\colemak.png")
 	esc		f1		f2		f3		f4		f5		f6		f7		f8		f9		f10		f11		f12				prnt	@qwe	@qwe
 	esc		1		2		3		4		5		6		@lt		7		8		f15		f16		=		@cap	caps	home	pgup	bspc	kp/		kp*		kp-
 	tab		q		w		f		p		b		f13		j		l		u		y		z		/		del		@elk	end		pgdn	kp7		kp8		kp9		kp+
@@ -29,7 +29,7 @@
 	lalt	lmet	lsft					@spc_ext						rsft	rmet	menu	ralt			left	down	rght	kp0				kp.
 )
 
-(deflayer extend
+(deflayer (extend icon "..\assets\extend.png")
 	_		_		_		_		_		_		_		_		_		_		_		_		_				_		_		_
 	_		@iexc	@ique	@gbp	@cent	@euro	@deg	@lte	@ndash	@mdash	@ibang	@micro	_		_		_		_		_		_		_		_		_
 	_		@top	home	up		end		pgup	_		kp+		7		8		9		kp*		\		_		_		_		_		_		_		_		_
@@ -38,7 +38,7 @@
 	_		_		@exs					_								@exs	_		_		_				_		_		_		_				_
 )
 
-(deflayer extend_shift
+(deflayer (extend_shift icon "..\assets\extend_shift.png")
 	_		_		_		_		_		_		_		_		_		_		_		_		_				_		_		_
 	_		@s1		@s2		@s3		@s4		@s5		@s6		@gte	@s7		@s8		@s9		@s0		@neq	_		_		_		_		_		_		_		_
 	_		@s_top	S-home	S-up	S-end	S-pgup	S-[		@plmn	@sqrt	@inf	@diff	@mul	S-\		_		_		_		_		_		_		_		_
