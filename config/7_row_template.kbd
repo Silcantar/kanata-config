@@ -1,0 +1,31 @@
+;; Keymap row templates shared by multiple keyboards.
+
+(deftemplate qwe_r0	()	esc		f1		f2		f3		f4		f5		f6		f7		f8		f9		f10		f11		f12)
+(deftemplate qwe_r1	()	grv		1		2		3		4		5		6		7		8		9		0		-		=		bspc)
+(deftemplate qwe_r2	()	tab		q		w		e		r		t		y		u		i		o		p		[		]		\)
+(deftemplate qwe_r3	()	caps	a		s		d		f		g		h		j		k		l		;		'		ret)
+(deftemplate qwe_r4	()	lsft	z		x		c		v		b		n		m		,		.		/		rsft)
+(deftemplate qwe_r5	()	lctl	lmet	lalt					spc						ralt)
+
+(deftemplate nav_r0	()	prnt	slck	pause)
+(deftemplate nav_r1	()	ins		home	pgup)
+(deftemplate nav_r2	()	del		end		pgdn)
+(deftemplate nav_r5	()	left	down	right)
+
+(deftemplate num_r0	()	calc	prev	pp		next)
+(deftemplate num_r1	()	nlk		kp/		kp*		kp-)
+(deftemplate num_r2	()	kp7		kp8		kp9		kp+)
+(deftemplate num_r3	()	kp4		kp5		kp6)
+(deftemplate num_r4	()	kp1		kp2		kp3		kprt)
+(deftemplate num_r5	()	kp0				kp.)
+
+(deftemplate col_r1	()	esc		@!_¡	@?_¿	@#_£	@dlr_¢	@%_€	@^_°	@–_—	@&_‽	@*_×	@<_[	@>_]	=		@cap)
+(deftemplate col_r2	()	tab		q		w		f		p		b		@lp_{	j		l		u		y		z		@/_@	del)
+(deftemplate col_r3	()	bspc	@a_met	@r_alt	@s_ctl	@t_sft	g		@rp_}	m		@n_sft	@e_ctl	@i_alt	@o_met	ret)
+(deftemplate col_r4	()	x		v		c		d		'		@copy	@paste	@__-	h		k		@,_;	@._:)
+(deftemplate col_r5	()	lalt	lmet	lsft					@spc_ext				rsft)
+
+(deftemplate ext_r1	()	_		@¹_₁	@²_₂	@³_₃	@⁴_₄	@⁵_₅	@⁶_₆	@≤_≥	@⁷_₇	@⁸_₈	@⁹_₉	@⁰_₀	@≠_≈	_)
+(deftemplate ext_r2	()	_		@top	home	up		end		pgup	_		@+_±	@7_√	@8_∞	@9_∂	@*_×	\		_)
+(deftemplate ext_r3	()	_		@bot	left	down	rght	pgdn	_		@/_÷	@4_D	@5_E	@6_F	@0_000	_)
+(deftemplate ext_r4	()	@undo	@cut	@copy	@paste	@dup	@redo	grv		-		@1_A	@2_B	@3_C	@._:)

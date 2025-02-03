@@ -1,43 +1,42 @@
 ;; Kanata map for Royal Kludge 65% keyboard to Colemak-DHVK
 
-(include common.kbd)
+(include 0_common.kbd)
+(include 1_template.kbd)
+(include 2_alias.kbd)
+(include 3_unicode.kbd)
+(include 4_macro.kbd)
+(include 5_tap_dance.kbd)
+(include 6_custom_key.kbd)
+(include 7_row_template.kbd)
 
 (defsrc
-	esc		1		2		3		4		5		6		7		8		9		0		-		=		bspc
-	tab		q		w		e		r		t		y		u		i		o		p		[		]		\		del
-	caps	a		s		d		f		g		h		j		k		l		;		'				ret		pgup
-	lsft	z		x		c		v		b		n		m		,		.		/				rsft	up		pgdn
-	lctl	lmet	lalt					spc								ralt					lft		down	rght
+	(t! qwe_r1)
+	(t! qwe_r2)						del
+	(t! qwe_r3)						pgup
+	(t! qwe_r4)				up		pgdn
+	(t! qwe_r5)		(t! nav_r5)
 )
 
 (deflayer qwerty
-	_		_		_		_		_		_		_		_		_		f15		f16		_		_		_
-	_		_		_		_		_		_		_		_		_		_		f13		f14		_		_		_
-	_		_		_		_		_		_		_		_		_		_		_		_				_		_
-	_		_		_		_		_		_		_		_		_		_		_				_		_		@col
-	_		_		_						_								_						_		_		_
+	(t! qwe_r1)
+	(t! qwe_r2)						_
+	(t! qwe_r3)						_
+	(t! qwe_r4)				_		@col
+	(t! qwe_r5)		(t! nav_r5)
 )
 
 (deflayer (colemak icon "..\assets\colemak.png")
-	esc		1		2		3		4		5		6		@lt		7		8		f15		f16		=		@cap
-	tab		q		w		f		p		b		f13		j		l		u		y		z		/		del		caps
-	bspc	@a_met	@r_alt	@s_ctl	@t_sft	g		f14		m		@n_sft	@e_ctl	@i_alt	@o_met			ret		@elk
-	x		v		c		d		'		@copy	@paste	-		h		k		f17				f18		up		@qwe
-	lalt	lmet	lsft					@spc_ext						rsft					left	down	rght
+	(t! col_r1)	
+	(t! col_r2)						caps
+	(t! col_r3)						@elk
+	(t! col_r4)				_		@qwe
+	(t! col_r5)		(t! nav_r5)
 )
 
 (deflayer (extend icon "..\assets\extend.png")
-	_		f1		f2		f3		f4		f5		f6		f7		f8		f9		f10		f11		f12		prnt
-	_		@top	home	up		end		pgup	_		kp+		7		8		9		kp*		\		_		_
-	_		@bot	lft		down	rght	pgdn	_		kp/		@4_sft	@5_ctl	@6_alt	@0_met			_		_
-	_		@undo	@cut	@copy	@paste	@dup	grv		kp-		1		2		3				kp.		_		_
-	_		_		@exs					_								@exs					_		_		_
-)
-
-(deflayer (extend_shift icon "..\assets\extend_shift.png")
-	_		@iexc	@ique	@gbp	@cent	@euro	@lte	@gte	@ndash	@mdash	@deg	@micro	@neq	_
-	_		@s_top	S-home	S-up	S-end	S-pgup	S-[		@plmn	@sqrt	@inf	@diff	@mul	S-\		_		_
-	_		@s_bot	S-lft	S-down	S-rght	S-pgdn	S-]		@div	S-d		S-e		S-f		@000			_		_
-	_		@redo	@s_cut	@s_copy	@s_pst	@s_dup	S-grv	@ndash	S-a		S-b		S-c				S-kp.	_		_
-	_		_		_						_								_						_		_		_
+	(t! ext_r1)	
+	(t! ext_r2)						_
+	(t! ext_r3)						_
+	(t! ext_r4)				_		_
+	(t! col_r5)		(t! nav_r5)
 )

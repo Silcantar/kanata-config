@@ -1,0 +1,22 @@
+;; Common configuration items to be (include)ed in all my Kanata layouts.
+
+(defcfg
+	process-unmapped-keys no
+	log-layer-changes yes
+	linux-dev /dev/input/event2:/dev/input/event3:/dev/input/event4:/dev/input/event5
+	tray-icon ..\assets\kanata.ico
+	;;icon-match-layer-name yes
+)
+
+(defvar
+	tap-timeout  250
+	hold-timeout 250
+	tt $tap-timeout
+	ht $hold-timeout
+
+;; Modifier Sets
+	_sft	(lsft rsft)
+	_ctl	(lctl rctl)
+	_alt	(lalt ralt)
+	_met	(lmet rmet)
+)

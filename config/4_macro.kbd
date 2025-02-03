@@ -1,0 +1,12 @@
+(defalias
+;; Macros
+	000		(macro kp0 kp0 kp0)
+	paren	(macro @lp @rp left)
+	brace	(macro @{ @} left)
+	brack	(macro [ ] left)
+	angle	(macro @< @> left)
+	pcomm	(macro @lp kp* kp* @lp left left)
+	ccomm	(macro / kp* kp* / left left)
+	squot	(macro ' ' left)
+	dquot	(macro @dq @dq left)
+)

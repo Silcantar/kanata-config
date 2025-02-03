@@ -1,0 +1,4 @@
+(deftemplate sft_fork (original-action new-action) (fork $original-action (multi (unmod $_sft nop0) $new-action) $_sft))
+(deftemplate ctl_fork (original-action new-action) (fork $original-action (multi (unmod $_ctl nop0) $new-action) $_ctl))
+(deftemplate alt_fork (original-action new-action) (fork $original-action (multi (unmod $_alt nop0) $new-action) $_alt))
+(deftemplate met_fork (original-action new-action) (fork $original-action (multi (unmod $_met nop0) $new-action) $_met))

@@ -1,48 +1,46 @@
 ;; Kanata map for ANSI-104 keyboard to Colemak-DHVK
 
-(include common.kbd)
+(include 0_common.kbd)
+(include 1_template.kbd)
+(include 2_alias.kbd)
+(include 3_unicode.kbd)
+(include 4_macro.kbd)
+(include 5_tap_dance.kbd)
+(include 6_custom_key.kbd)
+(include 7_row_template.kbd)
 
 (defsrc
-	esc		f1		f2		f3		f4		f5		f6		f7		f8		f9		f10		f11		f12				prnt	slck	pause
-	grv		1		2		3		4		5		6		7		8		9		0		-		=		bspc	ins		home	pgup	nlk		kp/		kp*		kp-
-	tab		q		w		e		r		t		y		u		i		o		p		[		]		\		del		end		pgdn	kp7		kp8		kp9		kp+
-	caps	a		s		d		f		g		h		j		k		l		;		'				ret								kp4		kp5		kp6
-	lsft	z		x		c		v		b		n		m		,		.		/						rsft			up				kp1		kp2		kp3		kprt
-	lctl	lmet	lalt					spc								ralt	rmet	menu	rctl			left	down	rght	kp0				kp.
+	(t! qwe_r0)								prnt	slck	pause		(t! num_r0)
+	(t! qwe_r1)								ins		home	pgup		(t! num_r1)
+	(t! qwe_r2)								del		end		pgdn		(t! num_r2)
+	(t! qwe_r3)															(t! num_r3)
+	(t! qwe_r4)									up						(t! num_r4)
+	(t! qwe_r5)		rmet	menu	rctl	(t! nav_r5)					(t! num_r5)
 )
 
 (deflayer qwerty
-	_		_		_		_		_		_		_		_		_		_		_		_		_				_		@col	@col
-	_		_		_		_		_		_		_		_		_		f15		f16		_		_		_		_		_		_		_		_		_		_
-	_		_		_		_		_		_		_		_		_		_		_		f13		f14		_		_		_		_		_		_		_		_
-	_		_		_		_		_		_		_		_		_		_		_		_				_								_		_		_
-	_		_		_		_		_		_		_		_		_		_		_						_				_				_		_		_		_
-	_		_		_						_								_		_		_		_				_		_		_		_				_
+	(t! qwe_r0)								_		@col	@col		(t! num_r0)
+	(t! qwe_r1)								_		_		_			(t! num_r1)
+	(t! qwe_r2)								_		_		_			(t! num_r2)
+	(t! qwe_r3)															(t! num_r3)
+	(t! qwe_r4)										_					(t! num_r4)
+	(t! qwe_r5)		_		_		_		(t! nav_r5)					(t! num_r5)
 )
 
 (deflayer (colemak icon "..\assets\colemak.png")
-	esc		f1		f2		f3		f4		f5		f6		f7		f8		f9		f10		f11		f12				prnt	@qwe	@qwe
-	esc		1		2		3		4		5		6		@lt		7		8		f15		f16		=		@cap	caps	home	pgup	bspc	kp/		kp*		kp-
-	tab		q		w		f		p		b		f13		j		l		u		y		z		/		del		@elk	end		pgdn	kp7		kp8		kp9		kp+
-	bspc	@a_met	@r_alt	@s_ctl	@t_sft	g		f14		m		@n_sft	@e_ctl	@i_alt	@o_met			ret								kp4		kp5		kp6
-	x		v		c		d		'		@copy	@paste	-		h		k		f17						f18				up				kp1		kp2		kp3		kprt
-	lalt	lmet	lsft					@spc_ext						rsft	rmet	menu	ralt			left	down	rght	kp0				kp.
+	(t! qwe_r0)								_		@qwe	@qwe		(t! num_r0)
+	(t! col_r1)								caps	_		_			(t! num_r1)
+	(t! col_r2)								@elk	_		_			(t! num_r2)
+	(t! col_r3)															(t! num_r3)
+	(t! col_r4)										_					(t! num_r4)
+	(t! col_r5)		ralt	_		_		(t! nav_r5)					(t! num_r5)
 )
 
 (deflayer (extend icon "..\assets\extend.png")
-	_		_		_		_		_		_		_		_		_		_		_		_		_				_		_		_
-	_		@iexc	@ique	@gbp	@cent	@euro	@deg	@lte	@ndash	@mdash	@ibang	@micro	_		_		_		_		_		_		_		_		_
-	_		@top	home	up		end		pgup	_		kp+		7		8		9		kp*		\		_		_		_		_		_		_		_		_
-	_		@bot	lft		down	rght	pgdn	_		kp/		@4_sft	@5_ctl	@6_alt	@0_met			_								_		_		_
-	_		@undo	@cut	@copy	@paste	@dup	grv		kp-		1		2		3						kp.				_				_		_		_		_
-	_		_		@exs					_								@exs	_		_		_				_		_		_		_				_
-)
-
-(deflayer (extend_shift icon "..\assets\extend_shift.png")
-	_		_		_		_		_		_		_		_		_		_		_		_		_				_		_		_
-	_		@s1		@s2		@s3		@s4		@s5		@s6		@gte	@s7		@s8		@s9		@s0		@neq	_		_		_		_		_		_		_		_
-	_		@s_top	S-home	S-up	S-end	S-pgup	S-[		@plmn	@sqrt	@inf	@diff	@mul	S-\		_		_		_		_		_		_		_		_
-	_		@s_bot	S-lft	S-down	S-rght	S-pgdn	S-]		@div	S-d		S-e		S-f		@000			_								_		_		_
-	_		@redo	@s_cut	@s_copy	@s_pst	@s_dup	S-grv	@ndash	S-a		S-b		S-c						S-kp.			_				_		_		_		_
-	_		_		_						_								_		_		_		_				_		_		_		_				_
+	(t! qwe_r0)								_		_		_			(t! num_r0)
+	(t! ext_r1)								_		_		_			(t! num_r1)
+	(t! ext_r2)								_		_		_			(t! num_r2)
+	(t! ext_r3)															(t! num_r3)
+	(t! ext_r4)										_					(t! num_r4)
+	(t! col_r5)		_		_		_		(t! nav_r5)					(t! num_r5)
 )

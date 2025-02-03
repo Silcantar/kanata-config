@@ -1,0 +1,64 @@
+(defalias
+;; Layer Actions
+	qwe		(layer-switch qwerty)
+	col		(layer-switch colemak)
+	elk		(layer-toggle extend)
+	ext		(layer-while-held	extend)
+
+;; Caps word
+	cap		(caps-word-toggle 5000)
+
+;; Tap-holds
+	spc_sft	(tap-hold-release 300 300 spc lsft)
+	spc_ext (tap-hold-release 300 300 spc @ext)
+	a_met	(tap-hold-release $tt $ht a lmet)
+	r_alt	(tap-hold-release $tt $ht r lalt)
+	s_ctl	(tap-hold-release $tt $ht s lctl)
+	t_sft	(tap-hold-release $tt $ht t lsft)
+	n_sft	(tap-hold-release $tt $ht n rsft)
+	e_ctl	(tap-hold-release $tt $ht e rctl)
+	i_alt	(tap-hold-release $tt $ht i ralt)
+	o_met	(tap-hold-release $tt $ht o rmet)
+	4_sft	(tap-hold-release $tt $ht kp4 rsft)
+	5_ctl	(tap-hold-release $tt $ht kp5 rctl)
+	6_alt	(tap-hold-release $tt $ht kp6 ralt)
+	0_met	(tap-hold-release $tt $ht kp0 rmet)
+	
+;; Shortcuts
+	top		C-home
+	s_top	C-S-home
+	bot		C-end
+	s_bot	C-S-end
+	undo	C-z
+	redo	C-S-z
+	cut		C-x
+	s_cut	C-S-x
+	copy	C-c
+	s_copy	C-S-c
+	paste	C-v
+	pst		@paste
+	s_pst	C-S-v
+	dup		C-d
+	s_dup	C-S-d
+
+;; Shifted Keys
+	!		S-1
+	at		S-2
+	#		S-3
+	dlr		S-4
+	%		S-5
+	^		S-6
+	&		S-7
+	*		S-8
+	lp		S-9
+	rp		S-0
+	_		S--
+	+		S-=
+	{		S-[
+	}		S-]
+	:		S-;
+	<		S-,
+	>		S-.
+	?		S-/
+	dq		S-'
+)

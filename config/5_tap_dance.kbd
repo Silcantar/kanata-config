@@ -1,0 +1,10 @@
+(defalias
+	td_paren	(tap-dance $tt (@lp @paren))
+	td_brace	(tap-dance $tt (@{ @brace))
+	td_brack	(tap-dance $tt ([ @brack))
+	td_angle	(tap-dance $tt (@< @angle))
+	td_pcomm	(tap-dance $tt (@rp @pcomm))
+	td_ccomm	(tap-dance $tt (/ @ccomm))
+	td_squot	(tap-dance $tt (' @squot))
+	td_dquot	(tap-dance $tt (@dq @dquot))
+)
