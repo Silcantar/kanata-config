@@ -9,20 +9,23 @@
 	cap		(caps-word-toggle 5000)
 
 ;; Tap-holds
-	spc_sft	(tap-hold-release 300 300 spc lsft)
-	spc_ext (tap-hold-release 300 300 spc @ext)
-	a_met	(tap-hold-release $tt $ht a lmet)
-	r_alt	(tap-hold-release $tt $ht r lalt)
-	s_ctl	(tap-hold-release $tt $ht s lctl)
-	t_sft	(tap-hold-release $tt $ht t lsft)
-	n_sft	(tap-hold-release $tt $ht n rsft)
-	e_ctl	(tap-hold-release $tt $ht e rctl)
-	i_alt	(tap-hold-release $tt $ht i ralt)
-	o_met	(tap-hold-release $tt $ht o rmet)
-	4_sft	(tap-hold-release $tt $ht kp4 rsft)
-	5_ctl	(tap-hold-release $tt $ht kp5 rctl)
-	6_alt	(tap-hold-release $tt $ht kp6 ralt)
-	0_met	(tap-hold-release $tt $ht kp0 rmet)
+	spc_sft	(tap-hold-release $tt0 $ht0 spc lsft)
+	spc_ext (tap-hold-release $tt0 $ht0 spc @ext)
+
+	a_met	(tap-hold-release $tt4 $ht4 a lmet)
+	r_alt	(tap-hold-release $tt3 $ht3 r lalt)
+	s_ctl	(tap-hold-release $tt2 $ht2 s lctl)
+	t_sft	(tap-hold-release $tt1 $ht1 t lsft)
+
+	n_sft	(tap-hold-release $tt1 $ht1 n rsft)
+	e_ctl	(tap-hold-release $tt2 $ht2 e rctl)
+	i_alt	(tap-hold-release $tt3 $ht3 i ralt)
+	o_met	(tap-hold-release $tt4 $ht4 o rmet)
+
+	4_sft	(tap-hold-release $tt1 $ht1 kp4 rsft)
+	5_ctl	(tap-hold-release $tt2 $ht2 kp5 rctl)
+	6_alt	(tap-hold-release $tt3 $ht3 kp6 ralt)
+	0_met	(tap-hold-release $tt4 $ht4 kp0 rmet)
 	
 ;; Shortcuts
 	top		C-home

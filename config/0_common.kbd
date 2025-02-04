@@ -9,14 +9,29 @@
 )
 
 (defvar
-	tap-timeout  250
-	hold-timeout 250
-	tt $tap-timeout
-	ht $hold-timeout
+;; Hold timeout for...
+	ht0 300	;; thumb
+	ht1 200	;; index
+	ht2 250	;; middle
+	ht3 300	;; ring
+	ht4 300	;; pinky
+
+;; Tap timeout
+	tt0 $ht0
+	tt1 $ht1
+	tt2 $ht2
+	tt3 $ht3
+	tt4 $ht4
+
+;; Tap Dance timeout
+	tdt 250
 
 ;; Modifier Sets
 	_sft	(lsft rsft)
 	_ctl	(lctl rctl)
 	_alt	(lalt ralt)
 	_met	(lmet rmet)
+
+	leftkeys	(grv 1 2 3 4 5 6 tab q w e r t caps a s d f g lsft z x c v b lctl lmet lalt spc)
+	rightkeys	(7 8 9 0 - = bspc y u i o p [ ] \ h j k l ; ' ret n m , . / rsft ralt rmet menu rctl)
 )
