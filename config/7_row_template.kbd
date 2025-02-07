@@ -20,12 +20,12 @@
 (deftemplate num_r5	()	kp0				kp.)
 
 (deftemplate col_r1	()	esc		@!_¡	@?_¿	@#_£	@dlr_¢	@%_€	@^_°	@–_—	@&_‽	@*_×	@<_[	@>_]	=		@cap)
-(deftemplate col_r2	()	tab		q		w		f		p		b		@lp_{	j		l		u		y		z		@/_@	del)
+(deftemplate col_r2	()	tab		'		w		f		p		b		@lp_{	j		l		u		y		@__-	@/_@	del)
 (deftemplate col_r3	()	bspc	@a_met	@r_alt	@s_ctl	@t_sft	g		@rp_}	m		@n_sft	@e_ctl	@i_alt	@o_met	ret)
-(deftemplate col_r4	()	x		v		c		d		'		@copy	@paste	@__-	h		k		@,_;	@._:)
+(deftemplate col_r4	()	x		v		c		d		q		@copy	@paste	z		h		k		@,_;	@._:)
 (deftemplate col_r5	()	lalt	lmet	lsft					@spc_ext				rsft)
 
 (deftemplate ext_r1	()	_		@¹_₁	@²_₂	@³_₃	@⁴_₄	@⁵_₅	@⁶_₆	@≤_≥	@⁷_₇	@⁸_₈	@⁹_₉	@⁰_₀	@≠_≈	_)
-(deftemplate ext_r2	()	_		@top	home	up		end		pgup	_		@+_±	@7_√	@8_∞	@9_∂	@*_×	\		_)
+(deftemplate ext_r2	()	_		@top	home	up		end		pgup	_		@+_±	@7_√	@8_∞	@9_µ	-		\		_)
 (deftemplate ext_r3	()	_		@bot	left	down	rght	pgdn	_		@/_÷	@4_D	@5_E	@6_F	@0_000	_)
-(deftemplate ext_r4	()	@undo	@cut	@copy	@paste	@dup	@redo	grv		-		@1_A	@2_B	@3_C	@._:)
+(deftemplate ext_r4	()	@undo	@cut	@copy	@paste	@dup	@redo	grv		@*_×	@1_A	@2_B	@3_C	@._:)
