@@ -3,7 +3,7 @@
 	qwe		(layer-switch qwerty)
 	col		(layer-switch colemak)
 	elk		(layer-toggle extend)
-	ext		(layer-while-held	extend)
+	ext		(layer-while-held extend)
 
 ;; Caps word
 	cap		(caps-word-toggle 5000)
