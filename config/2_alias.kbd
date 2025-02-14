@@ -7,25 +7,6 @@
 
 ;; Caps word
 	cap		(caps-word-toggle 5000)
-
-;; Tap-holds
-	spc_sft	(tap-hold-release $tt0 $ht0 spc lsft)
-	spc_ext (tap-hold-release $tt0 $ht0 spc @ext)
-
-	a_met	(tap-hold-release $tt4 $ht4 a lmet)
-	r_alt	(tap-hold-release $tt3 $ht3 r lalt)
-	s_ctl	(tap-hold-release $tt2 $ht2 s lctl)
-	t_sft	(tap-hold-release $tt1 $ht1 t lsft)
-
-	n_sft	(tap-hold-release $tt1 $ht1 n rsft)
-	e_ctl	(tap-hold-release $tt2 $ht2 e rctl)
-	i_alt	(tap-hold-release $tt3 $ht3 i ralt)
-	o_met	(tap-hold-release $tt4 $ht4 o rmet)
-
-	4_sft	(tap-hold-release $tt1 $ht1 kp4 rsft)
-	5_ctl	(tap-hold-release $tt2 $ht2 kp5 rctl)
-	6_alt	(tap-hold-release $tt3 $ht3 kp6 ralt)
-	0_met	(tap-hold-release $tt4 $ht4 kp0 rmet)
 	
 ;; Shortcuts
 	top		C-home
@@ -43,6 +24,19 @@
 	s_pst	C-S-v
 	dup		C-d
 	s_dup	C-S-d
+	open	C-o
+	save	C-s
+	edit	f2
+	new		C-n
+	sym		M-.
+	help	f1
+	rfsh	f5
+	prt		C-p
+	svas	C-S-s
+	clos	C-q
+	find	C-f
+	repl	C-h
+	sela	C-a
 
 ;; Shifted Keys
 	!		S-1

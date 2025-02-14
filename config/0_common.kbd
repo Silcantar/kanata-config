@@ -9,19 +9,25 @@
 )
 
 (defvar
+	ht_base	250
+	
 ;; Hold timeout for...
-	ht0 300	;; thumb
-	ht1 200	;; index
-	ht2 250	;; middle
-	ht3 300	;; ring
-	ht4 300	;; pinky
+	ht0		$ht_base + 0	;; thumb
+	ht1a	$ht_base + 0	;; index inner column
+	ht1		$ht_base - 50	;; index
+	ht2		$ht_base + 0	;; middle
+	ht3		$ht_base + 50	;; ring
+	ht4		$ht_base + 50	;; pinky
+	ht4a	$ht_base + 100	;; pinky outer column
 
 ;; Tap timeout
-	tt0 $ht0
-	tt1 $ht1
-	tt2 $ht2
-	tt3 $ht3
-	tt4 $ht4
+	tt0		$ht0
+	tt1a	$ht1a
+	tt1		$ht1
+	tt2		$ht2
+	tt3		$ht3
+	tt4		$ht4
+	tt4a	$ht4a
 
 ;; Tap Dance timeout
 	tdt 250

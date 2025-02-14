@@ -9,4 +9,5 @@
 	ccomm	(macro / kp* kp* / left left)
 	squot	(macro ' ' left)
 	dquot	(macro @dq @dq left)
+	selw	(macro C-left C-S-right)
 )

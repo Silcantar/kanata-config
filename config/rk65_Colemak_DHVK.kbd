@@ -7,7 +7,8 @@
 (include 4_macro.kbd)
 (include 5_tap_dance.kbd)
 (include 6_custom_key.kbd)
-(include 7_row_template.kbd)
+(include 7_tap_hold.kbd)
+(include 8_row_template.kbd)
 
 (defsrc
 	(t! qwe_r1)
@@ -17,7 +18,7 @@
 	(t! qwe_r5)		(t! nav_r5)
 )
 
-(deflayer qwerty
+(deflayer (qwerty icon "..\assets\qwerty.png")
 	(t! qwe_r1)
 	(t! qwe_r2)						_
 	(t! qwe_r3)						_

@@ -1,0 +1,46 @@
+(defalias
+;; Tap-holds
+	spc_ext (tap-hold-release $tt0 $ht0 spc @ext)
+
+	'_open	(tap-hold-release $tt4	$ht4	'		@open)
+	w_save	(tap-hold-release $tt3	$ht3	w		@save)
+	f_edit	(tap-hold-release $tt2	$ht2	f		@edit)
+	p_new	(tap-hold-release $tt1	$ht1	p		@new)
+	b_sym	(tap-hold-release $tt1a $ht1a	b		@sym)
+
+	a_met	(tap-hold-release $tt4	$ht4	a		lmet)
+	r_alt	(tap-hold-release $tt3	$ht3	r		lalt)
+	s_ctl	(tap-hold-release $tt2	$ht2	s		lctl)
+	t_sft	(tap-hold-release $tt1	$ht1	t		lsft)
+	g_ralt	(tap-hold-release $tt1a	$ht1a	g		ralt)
+
+	x_undo	(tap-hold-release $tt4	$ht4	x		@undo)
+	v_cut	(tap-hold-release $tt3	$ht3	v		@cut)
+	c_copy	(tap-hold-release $tt2	$ht2	c		@copy)
+	d_pst	(tap-hold-release $tt1	$ht1	d		@paste)
+	q_redo	(tap-hold-release $tt1a	$ht1a	q		@redo)
+
+	j_help	(tap-hold-release $tt1a	$ht1a	j		@help)
+	l_rfsh	(tap-hold-release $tt1	$ht1	l		@rfsh)
+	u_prt	(tap-hold-release $tt2	$ht2	u		@prt)
+	y_svas	(tap-hold-release $tt3	$ht3	y		@svas)
+	__prnt	(tap-hold-release $tt4	$ht4	@__-	prnt)
+
+	m_ralt	(tap-hold-release $tt1a	$ht1a	m		ralt)
+	n_sft	(tap-hold-release $tt1	$ht1	n		rsft)
+	e_ctl	(tap-hold-release $tt2	$ht2	e		rctl)
+	i_alt	(tap-hold-release $tt3	$ht3	i		lalt)
+	o_met	(tap-hold-release $tt4	$ht4	o		rmet)
+
+	z_clos	(tap-hold-release $tt1a	$ht1a	z		@clos)
+	h_find	(tap-hold-release $tt1	$ht1	h		@find)
+	k_repl	(tap-hold-release $tt2	$ht2	k		@repl)
+	,_sela	(tap-hold-release $tt3	$ht3	@,_;	@sela)
+	._selw	(tap-hold-release $tt4	$ht4	@._:	@selw)
+
+	/_ralt	(tap-hold-release $tt1a	$ht1a	@/_÷	ralt)
+	4_sft	(tap-hold-release $tt1	$ht1	@4_D	rsft)
+	5_ctl	(tap-hold-release $tt2	$ht2	@5_E	rctl)
+	6_alt	(tap-hold-release $tt3	$ht3	@6_F	lalt)
+	0_met	(tap-hold-release $tt4	$ht4	@0_000	rmet)
+)

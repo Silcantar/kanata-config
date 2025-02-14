@@ -1,5 +1,6 @@
 ;; Keymap row templates shared by multiple keyboards.
 
+;; QWERTY Alphanumeric Rows
 (deftemplate qwe_r0	()	esc		f1		f2		f3		f4		f5		f6		f7		f8		f9		f10		f11		f12)
 (deftemplate qwe_r1	()	grv		1		2		3		4		5		6		7		8		9		0		-		=		bspc)
 (deftemplate qwe_r2	()	tab		q		w		e		r		t		y		u		i		o		p		[		]		\)
@@ -7,11 +8,13 @@
 (deftemplate qwe_r4	()	lsft	z		x		c		v		b		n		m		,		.		/		rsft)
 (deftemplate qwe_r5	()	lctl	lmet	lalt					spc						ralt)
 
+;; Nav Cluster Rows
 (deftemplate nav_r0	()	prnt	slck	pause)
 (deftemplate nav_r1	()	ins		home	pgup)
 (deftemplate nav_r2	()	del		end		pgdn)
 (deftemplate nav_r5	()	left	down	right)
 
+;; Numpad Rows
 (deftemplate num_r0	()	calc	prev	pp		next)
 (deftemplate num_r1	()	nlk		kp/		kp*		kp-)
 (deftemplate num_r2	()	kp7		kp8		kp9		kp+)
@@ -19,13 +22,23 @@
 (deftemplate num_r4	()	kp1		kp2		kp3		kprt)
 (deftemplate num_r5	()	kp0				kp.)
 
+;; Colemak-DHVK Rows
 (deftemplate col_r1	()	esc		@!_¡	@?_¿	@#_£	@dlr_¢	@%_€	@^_°	@–_—	@&_‽	@*_×	@<_[	@>_]	=		@cap)
-(deftemplate col_r2	()	tab		'		w		f		p		b		@lp_{	j		l		u		y		@__-	@/_@	del)
-(deftemplate col_r3	()	bspc	@a_met	@r_alt	@s_ctl	@t_sft	g		@rp_}	m		@n_sft	@e_ctl	@i_alt	@o_met	ret)
-(deftemplate col_r4	()	x		v		c		d		q		@copy	@paste	z		h		k		@,_;	@._:)
+(deftemplate col_r2	()	tab		@'_open	@w_save	@f_edit	@p_new	@b_sym	@lp_{	@j_help	@l_rfsh	@u_prt	@y_svas	@__prnt	@/_@	del)
+(deftemplate col_r3	()	bspc	@a_met	@r_alt	@s_ctl	@t_sft	@g_ralt	@rp_}	@m_ralt	@n_sft	@e_ctl	@i_alt	@o_met	ret)
+(deftemplate col_r4	()	@x_undo	@v_cut	@c_copy	@d_pst	@q_redo	@copy	@paste	@z_clos	@h_find	@k_repl	@,_sela	@._selw)
 (deftemplate col_r5	()	lalt	lmet	lsft					@spc_ext				rsft)
 
+;; Extend Layer Rows
 (deftemplate ext_r1	()	_		@¹_₁	@²_₂	@³_₃	@⁴_₄	@⁵_₅	@⁶_₆	@≤_≥	@⁷_₇	@⁸_₈	@⁹_₉	@⁰_₀	@≠_≈	_)
 (deftemplate ext_r2	()	_		@top	home	up		end		pgup	_		@+_±	@7_√	@8_∞	@9_µ	-		\		_)
-(deftemplate ext_r3	()	_		@bot	left	down	rght	pgdn	_		@/_÷	@4_D	@5_E	@6_F	@0_000	_)
+(deftemplate ext_r3	()	_		@bot	left	down	rght	pgdn	_		@/_ralt	@4_sft	@5_ctl	@6_alt	@0_met	_)
 (deftemplate ext_r4	()	@undo	@cut	@copy	@paste	@dup	@redo	grv		@*_×	@1_A	@2_B	@3_C	@._:)
+
+;; Macro Numpad Rows
+(deftemplate mac_r0	()	_		_		_		_)
+(deftemplate mac_r1	()	_		_		_		_)
+(deftemplate mac_r2	()	_		_		_		_)
+(deftemplate mac_r3	()	_		_		_)
+(deftemplate mac_r4	()	_		_		_		_)
+(deftemplate mac_r5	()	_				_)
