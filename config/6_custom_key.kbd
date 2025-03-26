@@ -14,7 +14,7 @@
 	>_]		(t! sft_fork	@>			])
 	lp_{	(t! sft_fork	@td_paren	@td_brace)
 	rp_}	(t! sft_fork	@td_pcomm	@})
-	/_@		(t! sft_fork	/			@at)
+	/_at	(t! sft_fork	/			@at)
 	'_dq	(t! sft_fork	@td_squot	@td_dquot)
 	__-		(t! sft_fork	@_			-)
 	,_;		(t! sft_fork	,			;)
