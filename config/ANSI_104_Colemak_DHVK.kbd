@@ -20,8 +20,8 @@
 )
 
 (deflayer (qwerty icon "..\assets\kanata.ico")
-	(t! qwe_r0)								_		@col	@col		(t! num_r0)
-	(t! qwe_r1)								_		_		_			(t! num_r1)
+	(t! qwe_r0)								_		_		_			(t! num_r0)
+	(t! qwe_r1)								_		@col	_			(t! num_r1)
 	(t! qwe_r2)								_		_		_			(t! num_r2)
 	(t! qwe_r3)															(t! num_r3)
 	(t! qwe_r4)										_					(t! num_r4)
@@ -29,8 +29,8 @@
 )
 
 (deflayer (colemak icon "..\assets\colemak.png")
-	(t! qwe_r0)								_		@qwe	@qwe		(t! mac_r0)
-	(t! col_r1)								caps	_		_			(t! mac_r1)
+	(t! qwe_r0)								_		_		_			(t! mac_r0)
+	(t! col_r1)								caps	@qwe	_			(t! mac_r1)
 	(t! col_r2)								@elk	_		_			(t! mac_r2)
 	(t! col_r3)															(t! mac_r3)
 	(t! col_r4)										_					(t! mac_r4)
