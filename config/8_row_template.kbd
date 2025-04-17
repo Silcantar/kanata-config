@@ -23,22 +23,22 @@
 (deftemplate num_r5	()	kp0				kp.)
 
 ;; Colemak-DHVK Rows
-(deftemplate col_r1	()	esc		@!_¡	@?_¿	@#_£	@dlr_¢	@%_€	@^_°	@–_—	@&_‽	@*_×	@<_[	@>_]	=		@cap)
-(deftemplate col_r2	()	tab		@'_open	@w_save	@f_edit	@p_new	@b_sym	@lp_{	@j_help	@l_rfsh	@u_prt	@y_svas	@__prnt	@/_at	del)
-(deftemplate col_r3	()	bspc	@a_met	@r_alt	@s_ctl	@t_sft	@g_ralt	@rp_}	@m_ralt	@n_sft	@e_ctl	@i_alt	@o_met	ret)
+(deftemplate col_r1	()	@elk	@!_¡	@?_¿	@#_£	@dlr_¢	@%_€	@^_°	@–_—	@&_‽	@*_×	@<_[	@>_]	=		@cap)
+(deftemplate col_r2	()	tab		@'_open	@w_save	@f_edit	@p_new	@b_sym	@rp_{	@j_help	@l_rfsh	@u_prt	@y_svas	@__prnt	@/_at	del)
+(deftemplate col_r3	()	esc		@a_met	@r_alt	@s_ctl	@t_sft	@g_ralt	@lp_}	@m_ralt	@n_sft	@e_ctl	@i_alt	@o_met	ret)
 (deftemplate col_r4	()	@x_undo	@v_cut	@c_copy	@d_pst	@q_redo	@paste	@copy	@z_clos	@h_find	@k_repl	@,_sela	@._selw)
-(deftemplate col_r5	()	lalt	lmet	lsft					@spc_ext				rsft)
+(deftemplate col_r5	()	caps	@os_lc	@os_ls					@spc_ext				bspc)
 
 ;; Extend Layer Rows
-(deftemplate ext_r1	()	_		@¹_₁	@²_₂	@³_₃	@⁴_₄	@⁵_₅	@⁶_₆	@≤_≥	@⁷_₇	@⁸_₈	@⁹_₉	@⁰_₀	@≠_≈	_)
-(deftemplate ext_r2	()	_		@top	home	up		end		pgup	_		@+_±	@7_√	@8_∞	@9_µ	-		\		_)
-(deftemplate ext_r3	()	_		@bot	left	down	rght	pgdn	_		@/_ralt	@4_sft	@5_ctl	@6_alt	@0_met	_)
-(deftemplate ext_r4	()	@undo	@cut	@copy	@paste	@dup	@redo	grv		@*_×	@1_A	@2_B	@3_C	@._:)
+(deftemplate ext_r1	()	@col	@¹_₁	@²_₂	@³_₃	@⁴_₄	@⁵_₅	@⁶_₆	@≤_≥	@⁷_₇	@⁸_₈	@⁹_₉	@⁰_₀	@≠_≈	_)
+(deftemplate ext_r2	()	_		@top	home	up		end		pgup	_		@*_×	@7_√	@8_∞	@9_µ	-		\		_)
+(deftemplate ext_r3	()	_		@bot	left	down	rght	pgdn	_		@/_ralt	@0_sft	@1_ctl	@2_alt	@3_met	_)
+(deftemplate ext_r4	()	@undo	@cut	@copy	@paste	@dup	@redo	grv		@+_±	@4_D	@5_E	@6_F	@._:)
 
 ;; Macro Numpad Rows
 (deftemplate mac_r0	()	_		_		_		_)
 (deftemplate mac_r1	()	_		_		_		_)
-(deftemplate mac_r2	()	_		_		_		_)
-(deftemplate mac_r3	()	_		_		_)
-(deftemplate mac_r4	()	_		_		_		_)
+(deftemplate mac_r2	()	@rfsh	prnt	@svas	@open)
+(deftemplate mac_r3	()	@new	@edit	@save)
+(deftemplate mac_r4	()	@find	@repl	@sela	@selw)
 (deftemplate mac_r5	()	_				_)

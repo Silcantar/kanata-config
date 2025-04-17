@@ -26,7 +26,7 @@
 	(t! qwe_r2)										(t! num_r2)
 	(t! qwe_r3)										(t! num_r3)
 	(t! qwe_r4)										(t! num_r4)
-	(t! qwe_r5)		_		home	_		end		(t! num_r5)
+	(t! qwe_r5)		@os_rs	home	_		end		(t! num_r5)
 							(t! nav_r5)
 )
 
@@ -36,7 +36,7 @@
 	(t! col_r2)										(t! mac_r2)
 	(t! col_r3)										(t! mac_r3)
 	(t! col_r4)										(t! mac_r4)
-	(t! col_r5)		_		_		_		_		(t! mac_r5)
+	(t! col_r5)		@os_rs		home	_		end		(t! mac_r5)
 							(t! nav_r5)
 )
 
@@ -46,6 +46,6 @@
 	(t! ext_r2)										(t! mac_r2)
 	(t! ext_r3)										(t! mac_r3)
 	(t! ext_r4)										(t! mac_r4)
-	(t! col_r5)		_		_		_		_		(t! mac_r5)
+	(t! col_r5)		@os_rs	home	_		end		(t! mac_r5)
 							(t! nav_r5)
 )

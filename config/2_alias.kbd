@@ -2,11 +2,21 @@
 ;; Layer Actions
 	qwe		(layer-switch qwerty)
 	col		(layer-switch colemak)
-	elk		(layer-toggle extend)
+	elk		(layer-switch extend)
 	ext		(layer-while-held extend)
 
 ;; Caps word
 	cap		(caps-word-toggle 5000)
+
+;; One-shots
+	os_la	(one-shot-press 2000 lalt)
+	os_ra	(one-shot-press 2000 ralt)
+	os_lc	(one-shot-press 2000 lctl)
+	os_rc	(one-shot-press 2000 rctl)
+	os_lm	(one-shot-press 2000 lmet)
+	os_rm	(one-shot-press 2000 rmet)
+	os_ls	(one-shot-press 2000 lsft)
+	os_rs	(one-shot-press 2000 rsft)
 	
 ;; Shortcuts
 	top		C-home

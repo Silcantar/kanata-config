@@ -39,8 +39,12 @@
 	._selw	(tap-hold-release $tt4	$ht4	@._:	@selw)
 
 	/_ralt	(tap-hold-release $tt1a	$ht1a	@/_÷	ralt)
+	0_sft	(tap-hold-release $tt1	$ht1	@0_000	rsft)
 	4_sft	(tap-hold-release $tt1	$ht1	@4_D	rsft)
+	1_ctl	(tap-hold-release $tt2	$ht2	@1_A	rctl)
 	5_ctl	(tap-hold-release $tt2	$ht2	@5_E	rctl)
+	2_alt	(tap-hold-release $tt3	$ht3	@2_B	lalt)
 	6_alt	(tap-hold-release $tt3	$ht3	@6_F	lalt)
+	3_met	(tap-hold-release $tt4	$ht4	@3_C	rmet)
 	0_met	(tap-hold-release $tt4	$ht4	@0_000	rmet)
 )
