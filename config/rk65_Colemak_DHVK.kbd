@@ -28,7 +28,7 @@
 
 (deflayer (colemak icon "..\assets\colemak.png")
 	(t! col_r1)	
-	(t! col_r2)						caps
+	(t! col_r2)						prnt
 	(t! col_r3)						@elk
 	(t! col_r4)				_		@qwe
 	(t! col_r5)		(t! nav_r5)

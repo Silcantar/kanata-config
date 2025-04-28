@@ -21,8 +21,8 @@
 )
 
 (deflayer (qwerty icon "..\assets\kanata.ico")
-	(t! trn_r0)				pgup	pgdn	_		_		_		_		_
-	(t! trn_r1)										@col	_		_		_
+	(t! trn_r0)				@col	@elk	_		_		_		_		_
+	(t! trn_r1)										bspc	_		_		_
 	(t! trn_r2)										(t! num_r2)
 	(t! trn_r3)										(t! num_r3)
 	(t! trn_r4)										(t! num_r4)
@@ -31,8 +31,8 @@
 )
 
 (deflayer (colemak icon "..\assets\colemak.png")
-	(t! trn_r0)				@elk	prnt	caps	_		_		_		_
-	(t! col_r1)										@qwe	_		_		_
+	(t! trn_r0)				@elk	@qwe	prnt	_		_		_		_
+	(t! col_r1)										(t! mac_r1)
 	(t! col_r2)										(t! mac_r2)
 	(t! col_r3)										(t! mac_r3)
 	(t! col_r4)										(t! mac_r4)
@@ -41,8 +41,8 @@
 )
 
 (deflayer (extend icon "..\assets\extend.png")
-	(t! trn_r0)				@col	_		_		_		_		_		_
-	(t! ext_r1)										@qwe	_		_		_
+	(t! trn_r0)				@col	@qwe	_		_		_		_		_
+	(t! ext_r1)										(t! mac_r1)
 	(t! ext_r2)										(t! mac_r2)
 	(t! ext_r3)										(t! mac_r3)
 	(t! ext_r4)										(t! mac_r4)
