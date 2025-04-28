@@ -19,11 +19,11 @@
 )
 
 (deflayer (qwerty icon "..\assets\qwerty.png")
-	(t! qwe_r1)
-	(t! qwe_r2)						_
-	(t! qwe_r3)						_
-	(t! qwe_r4)				_		@col
-	(t! qwe_r5)		(t! nav_r5)
+	(t! trn_r1)
+	(t! trn_r2)						_
+	(t! trn_r3)						@col
+	(t! trn_r4)				_		@elk
+	(t! trn_r5)		(t! nav_r5)
 )
 
 (deflayer (colemak icon "..\assets\colemak.png")
@@ -37,7 +37,7 @@
 (deflayer (extend icon "..\assets\extend.png")
 	(t! ext_r1)	
 	(t! ext_r2)						_
-	(t! ext_r3)						_
-	(t! ext_r4)				_		_
+	(t! ext_r3)						@col
+	(t! ext_r4)				_		@qwe
 	(t! col_r5)		(t! nav_r5)
 )

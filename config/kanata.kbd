@@ -12,9 +12,11 @@
 
 (include 5_tap_dance.kbd)
 
-(include 6_custom-key.kbd)
+(include 6_custom_key.kbd)
 
-(include 7_row_template.kbd)
+(include 7_tap_hold.kbd)
+
+(include 8_row_template.kbd)
 
 (include ANSI_104_Colemak_DHVK.kbd)
 

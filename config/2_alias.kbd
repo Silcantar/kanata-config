@@ -6,8 +6,11 @@
 	ext		(layer-while-held extend)
 
 ;; Caps word
-	cap		(caps-word-toggle 5000)
-
+	cap		(caps-word-custom 5000 
+				(a b c d e f g h i j k l m n o p q r s t u v w x y z)
+				(0 1 2 3 4 5 6 7 8 9 kp0 kp1 kp2 kp3 kp4 kp5 kp6 kp7 kp8 kp9 bspc del up down left rght - lsft)
+			)
+	
 ;; One-shots
 	os_la	(one-shot-press 2000 lalt)
 	os_ra	(one-shot-press 2000 ralt)
@@ -61,8 +64,6 @@
 	rp		S-0
 	_		S--
 	+		S-=
-	{		S-[
-	}		S-]
 ;;	:		S-;
 	<		S-,
 	>		S-.

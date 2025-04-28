@@ -1,6 +1,9 @@
 (defalias
 	at	(unicode @)
 	:	(unicode :)
+	{	(unicode {)
+	}	(unicode })
+
 ;; Unicode
 	;; Numpad+Shift
 	±	(unicode ±)
