@@ -3,6 +3,7 @@
 	qwe		(layer-switch qwerty)
 	col		(layer-switch colemak)
 	elk		(layer-switch extend)
+	trn		(layer-switch transparent)
 	ext		(layer-while-held extend)
 
 ;; Caps word

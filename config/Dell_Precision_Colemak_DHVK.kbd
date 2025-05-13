@@ -18,6 +18,8 @@
 	(t! qwe_r4)										(t! num_r4)
 	(t! qwe_r5)		rctl	pgup	up		pgdn	(t! num_r5)
 							(t! nav_r5)
+	
+	f23
 )
 
 (deflayer (qwerty icon "..\assets\kanata.ico")
@@ -26,8 +28,10 @@
 	(t! trn_r2)										(t! num_r2)
 	(t! trn_r3)										(t! num_r3)
 	(t! trn_r4)										(t! num_r4)
-	(t! trn_r5)		rctl	home	_		end		(t! num_r5)
+	_	_	_	@spc_ext	_	_	home	_		end		(t! num_r5)
 							(t! nav_r5)
+
+	@trn
 )
 
 (deflayer (colemak icon "..\assets\colemak.png")
@@ -38,6 +42,8 @@
 	(t! col_r4)										(t! mac_r4)
 	(t! col_r5)		@os_rs	home	_		end		(t! mac_r5)
 							(t! nav_r5)
+
+	@trn
 )
 
 (deflayer (extend icon "..\assets\extend.png")
@@ -48,4 +54,18 @@
 	(t! ext_r4)										(t! mac_r4)
 	(t! col_r5)		@os_rs	home	_		end		(t! mac_r5)
 							(t! nav_r5)
+
+	@trn
+)
+
+(deflayer (transparent icon "..\assets\transparent.png")
+	(t! trn_r0)				_		_		_		_		_		_		_
+	(t! trn_r1)										@qwe	_		_		_
+	(t! trn_r2)										(t! num_r2)
+	(t! trn_r3)										(t! num_r3)
+	(t! trn_r4)										(t! num_r4)
+	(t! trn_r5)		_		_		_		_		(t! num_r5)
+							(t! nav_r5)
+
+	_
 )

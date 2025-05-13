@@ -28,7 +28,7 @@
 (deftemplate trn_r2	()	_		_		_		_		_		_		_		_		_		_		_		_		_		_)
 (deftemplate trn_r3	()	_		_		_		_		_		_		_		_		_		_		_		_		_)
 (deftemplate trn_r4	()	_		_		_		_		_		_		_		_		_		_		_		_)
-(deftemplate trn_r5	()	_		_		_						@spc_ext				_)
+(deftemplate trn_r5	()	_		_		_						_				_)
 
 ;; Colemak-DHVK Rows
 (deftemplate col_r1	()	bspc	@!_¡	@?_¿	@#_£	@dlr_¢	@%_€	@^_°	@–_—	@&_‽	@*_×	@<_[	@>_]	=		@cap)
