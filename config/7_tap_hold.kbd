@@ -1,6 +1,8 @@
 (defalias
 ;; Tap-holds
 	spc_ext (tap-hold-release $tt0 $ht0 spc @ext)
+	ret_s	(tap-hold-release $tt0 $ht0 ret lsft)
+	del_c	(tap-hold-release $tt0 $ht0 del rctl)
 
 	'_open	(tap-hold-release $tt4	$ht4	'		@open)
 	w_save	(tap-hold-release $tt3	$ht3	w		@save)

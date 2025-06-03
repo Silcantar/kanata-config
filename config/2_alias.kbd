@@ -4,7 +4,9 @@
 	col		(layer-switch colemak)
 	elk		(layer-switch extend)
 	trn		(layer-switch transparent)
+	adv		(layer-switch advanced)
 	ext		(layer-while-held extend)
+
 
 ;; Caps word
 	cap		(caps-word-custom 5000 

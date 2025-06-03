@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
+sudo systemctl --user stop kanata.service
+
 sudo cp ../binary/kanata /usr/bin
 
 sudo groupadd uinput
@@ -17,8 +19,7 @@ mkdir -p ~/.config/systemd/user
 
 cp kanata.service ~/.config/systemd/user/
 
-mkdir ~/.config/kanata
-cp -r ../config ~/.config/kanata
+bash update_config.sh
 
 systemctl --user daemon-reload
 systemctl --user enable kanata.service

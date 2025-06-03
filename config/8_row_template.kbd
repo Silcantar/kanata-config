@@ -50,3 +50,9 @@
 (deftemplate mac_r3	()	@new	@edit	@save)
 (deftemplate mac_r4	()	@find	@repl	@sela	@selw)
 (deftemplate mac_r5	()	_				_)
+
+;; Advanced Colemak layout
+(deftemplate adv_r1 ()  _       @'_open @b_sym  @w_save	@f_edit	@p_new	_       _       @j_help	@l_rfsh	@u_prt	@y_svas	@j_help @__prnt @/_at)
+(deftemplate adv_r2 ()  esc		@a_met	@r_alt	@s_ctl	@t_sft	@g_ralt	@lp_{   @rp_}	@m_ralt	@n_sft	@e_ctl	@i_alt	@o_met	@cap)
+(deftemplate adv_r3 ()  @x_undo	@v_cut	@c_copy	@d_pst	@q_redo	@paste	@cut    @copy	@z_clos	@h_find	@k_repl	@,_sela	@._selw)
+(deftemplate adv_r4 ()  _       _       @os_lc  @ret_s  spc     @ext    S-tab   tab     bspc    @os_rs  @del_c  _)
