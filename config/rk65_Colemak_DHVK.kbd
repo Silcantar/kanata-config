@@ -16,6 +16,8 @@
 	(t! qwe_r3)						pgup
 	(t! qwe_r4)				up		pgdn
 	(t! qwe_r5)		(t! nav_r5)
+
+	f23
 )
 
 (deflayer (qwerty icon "..\assets\qwerty.png")
@@ -24,6 +26,8 @@
 	(t! trn_r3)						@col
 	(t! trn_r4)				_		@elk
 	(t! trn_r5)		(t! nav_r5)
+
+	@trn
 )
 
 (deflayer (colemak icon "..\assets\colemak.png")
@@ -32,6 +36,8 @@
 	(t! col_r3)						@elk
 	(t! col_r4)				_		@qwe
 	(t! col_r5)		(t! nav_r5)
+
+	@trn
 )
 
 (deflayer (extend icon "..\assets\extend.png")
@@ -40,4 +46,26 @@
 	(t! ext_r3)						@col
 	(t! ext_r4)				_		@qwe
 	(t! col_r5)		(t! nav_r5)
+
+	@trn
+)
+
+(deflayer (transparent icon "..\assets\transparent.png")
+	(t! trn_r1)
+	(t! trn_r2)						_
+	(t! trn_r3)						_
+	(t! trn_r4)				_		@qwe
+	(t! trn_r5)		(t! nav_r5)
+
+	_
+)
+
+(deflayer (advanced icon "..\assets\advanced.png")
+	(t! adv_r1)	
+	(t! adv_r2)						prnt
+	(t! adv_r3)						@elk
+	(t! adv_r4)				_		@qwe
+	(t! col_r5)		(t! nav_r5)
+
+	@trn
 )
