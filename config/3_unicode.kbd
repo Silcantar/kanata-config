@@ -5,6 +5,7 @@
 	}	(unicode })
 	lp	(unicode "(")
 	rp	(unicode ")")
+	dq	(unicode r#"""#)
 
 ;; Unicode
 	;; Numpad+Shift
