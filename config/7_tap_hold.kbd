@@ -4,7 +4,7 @@
 	ret_s	(tap-hold-release $tt0 $ht0 ret lsft)
 	del_c	(tap-hold-release $tt0 $ht0 del rctl)
 
-	'_open	(tap-hold-release $tt4	$ht4	'		@open)
+	'_open	(tap-hold-release $tt4	$ht4	@'_dq	@open)
 	w_save	(tap-hold-release $tt3	$ht3	w		@save)
 	f_edit	(tap-hold-release $tt2	$ht2	f		@edit)
 	p_new	(tap-hold-release $tt1	$ht1	p		@new)

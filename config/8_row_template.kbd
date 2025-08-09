@@ -32,14 +32,14 @@
 
 ;; Colemak-DHVK Rows
 (deftemplate col_r1	()	bspc	@!_¡	@?_¿	@#_£	@dlr_¢	@%_€	@^_°	@–_—	@&_‽	@*_×	@<_[	@>_]	=		@cap)
-(deftemplate col_r2	()	tab		@'_open	@w_save	@f_edit	@p_new	@b_sym	@rp_}	@j_help	@l_rfsh	@u_prt	@y_svas	@__prnt	@/_at	del)
-(deftemplate col_r3	()	esc		@a_met	@r_alt	@s_ctl	@t_sft	@g_ralt	@lp_{	@m_ralt	@n_sft	@e_ctl	@i_alt	@o_met	ret)
+(deftemplate col_r2	()	tab		@'_open	@w_save	@f_edit	@p_new	@b_sym	@{_}	@j_help	@l_rfsh	@u_prt	@y_svas	@__prnt	@/_at	del)
+(deftemplate col_r3	()	esc		@a_met	@r_alt	@s_ctl	@t_sft	@g_ralt	@lp_rp	@m_ralt	@n_sft	@e_ctl	@i_alt	@o_met	ret)
 (deftemplate col_r4	()	@x_undo	@v_cut	@c_copy	@d_pst	@q_redo	@paste	@copy	@z_clos	@h_find	@k_repl	@,_sela	@._selw)
 (deftemplate col_r5	()	caps	@os_lc	@os_ls					@spc_ext				bspc)
 
 ;; Extend Layer Rows
-(deftemplate ext_r1	()	bspc	@¹_₁	@²_₂	@³_₃	@⁴_₄	@⁵_₅	@⁶_₆	@≤_≥	@⁷_₇	@⁸_₈	@⁹_₉	@⁰_₀	@≠_≈	_)
-(deftemplate ext_r2	()	_		@top	home	up		end		pgup	_		@*_×	@7_√	@8_∞	@9_µ	-		\		_)
+(deftemplate ext_r1	()	bspc	@¹_₁	@²_₂	@³_₃	@⁴_₄	@⁵_₅	@⁶_₆	@≤_≥	@⁷_₇	@⁸_₈	@⁹_₉	@⁰_₀	@≠_≈	lrld)
+(deftemplate ext_r2	()	_		@top	home	up		end		pgup	S-grv	@*_×	@7_√	@8_∞	@9_µ	-		\		_)
 (deftemplate ext_r3	()	_		@bot	left	down	rght	pgdn	_		@/_ralt	@0_sft	@1_ctl	@2_alt	@3_met	_)
 (deftemplate ext_r4	()	@undo	@cut	@copy	@paste	@dup	@redo	grv		@+_±	@4_D	@5_E	@6_F	@._:)
 
@@ -53,6 +53,6 @@
 
 ;; Advanced Colemak layout
 (deftemplate adv_r1 ()  _       @'_open @b_sym  @w_save	@f_edit	@p_new	_       _       @j_help	@l_rfsh	@u_prt	@y_svas	@j_help @__prnt)
-(deftemplate adv_r2 ()  esc		@a_met	@r_alt	@s_ctl	@t_sft	@g_ralt	@lp_{   @rp_}	@m_ralt	@n_sft	@e_ctl	@i_alt	@o_met	@cap)
+(deftemplate adv_r2 ()  esc		@a_met	@r_alt	@s_ctl	@t_sft	@g_ralt	@{_}   @lp_rp	@m_ralt	@n_sft	@e_ctl	@i_alt	@o_met	@cap)
 (deftemplate adv_r3 ()  @x_undo	@v_cut	@c_copy	@d_pst	@q_redo	@paste	@cut    @copy	@z_clos	@h_find	@k_repl	@,_sela	@._selw)
 (deftemplate adv_r4 ()  _       _       @os_lc  @ret_s  spc     @ext    S-tab   tab     bspc    @os_rs  @del_c  _)

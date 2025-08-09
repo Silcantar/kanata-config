@@ -3,6 +3,8 @@
 	:	(unicode :)
 	{	(unicode {)
 	}	(unicode })
+	lp	(unicode "(")
+	rp	(unicode ")")
 
 ;; Unicode
 	;; Numpad+Shift

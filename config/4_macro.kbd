@@ -2,7 +2,7 @@
 ;; Macros
 	000		(macro kp0 kp0 kp0)
 	paren	(macro @lp @rp left)
-	brace	(macro @{ @} left)
+	brace	(macro S-[ S-] left)
 	brack	(macro [ ] left)
 	angle	(macro @< @> left)
 	pcomm	(macro @lp kp* kp* @lp left left)
