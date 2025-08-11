@@ -13,9 +13,9 @@
 ;; Hold timeout for...
 	ht0		250	;; thumb
 	ht1a	250	;; index inner column
-	ht1		200	;; index
-	ht2		250	;; middle
-	ht3		300	;; ring
+	ht1		150	;; index
+	ht2		200	;; middle
+	ht3		250	;; ring
 	ht4		300	;; pinky
 	ht4a	350	;; pinky outer column
 
