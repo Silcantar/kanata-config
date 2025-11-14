@@ -31,17 +31,31 @@
 (deftemplate trn_r5	()	_		_		_						_				_)
 
 ;; Colemak-DHVK Rows
-(deftemplate col_r1	()	bspc	@!_¡	@?_¿	@#_£	@dlr_¢	@%_€	@^_°	@–_—	@&_‽	@*_×	@<_[	@>_]	=		@cap)
-(deftemplate col_r2	()	tab		@'_open	@w_save	@f_edit	@p_new	@b_sym	@{_}	@j_help	@l_rfsh	@u_prt	@y_svas	@__prnt	@/_at	del)
-(deftemplate col_r3	()	esc		@a_met	@r_alt	@s_ctl	@t_sft	@g_ralt	@lp_rp	@m_ralt	@n_sft	@e_ctl	@i_alt	@o_met	ret)
-(deftemplate col_r4	()	@x_undo	@v_cut	@c_copy	@d_pst	@q_redo	@paste	@copy	@z_clos	@h_find	@k_repl	@,_sela	@._selw)
-(deftemplate col_r5	()	caps	@os_lc	@os_ls					@spc_ext				bspc)
+(deftemplate col_r1	()	XX		@b_ins	@'_open	@w_save	@f_edit	@p_new	@b_ins	XX		@j_help	@l_rfsh	@u_prt	@y_svas	@__prnt	@j_help)
+(deftemplate col_r2	()	esc		@a_met	@r_alt	@s_ctl	@t_sft	@g_ralt	XX		XX		@m_ralt	@n_sft	@e_ctl	@i_alt	@o_met	@cap)
+(deftemplate col_r3	()	@x_undo	@v_cut	@c_copy	@d_pst	@q_redo	@ltab_a	XX		XX		@z_clos	@h_find	@k_repl	@,_sela	@._selw)
+(deftemplate col_r4	()	XX		XX		@os_lc	@ent_s	spc		@ltab_a	XX		@tab_a	bspc	@os_ls	@del_c	XX)
+(deftemplate col_r5	()	XX		XX		XX						@os_sym					@os_fun)
+
+;; Symbol Rows
+(deftemplate sym_r1	()	XX		@<_ins	@=_open	@[_save	@{_edit	@lp_new	@<_ins	XX		@>_help	@?_rfsh	@!_prt	@rpt_svas	@-_prnt	@>_help)
+(deftemplate sym_r2	()	_		@7_met	@5_alt	@3_ctl	@1_sft	@\_ralt	XX		XX		@/_ralt	@0_sft	@2_ctl	@4_alt	@6_met	_)
+(deftemplate sym_r3	()	@^_undo	@#_cut	@*_copy	@9_pst	@%_redo	_		XX		XX		@dlr_clos	@8_find	@+_repl	_	_)
+(deftemplate sym_r4	()	XX		XX		_		_		_		_		XX		_		_		_		_		XX)
+(deftemplate sym_r5	()	XX		XX		XX						_						_)
+
+;; Function Rows
+(deftemplate fun_r1	()	XX		@find	@wrdl	home	end		@wrdr	@find	XX		menu	f1		f4		f7		f10		menu)
+(deftemplate fun_r2	()	_		left	down	up		rght	@repl	XX		XX		pgup	@f2_sft	@f5_ctl	@f8_alt	@f11_met	_)
+(deftemplate fun_r3	()	@undo	@cut	@copy	@paste	@redo	_		XX		XX		pgdn	f3		f6		f9		f12)
+(deftemplate fun_r4	()	XX		XX		_		_		_		_		XX		_		_		_		_		XX)
+(deftemplate fun_r5	()	XX		XX		XX						_						_)
 
 ;; Extend Layer Rows
-(deftemplate ext_r1	()	bspc	@¹_₁	@²_₂	@³_₃	@⁴_₄	@⁵_₅	@⁶_₆	@≤_≥	@⁷_₇	@⁸_₈	@⁹_₉	@⁰_₀	@≠_≈	lrld)
-(deftemplate ext_r2	()	_		@top	home	up		end		pgup	S-grv	@*_×	@7_√	@8_∞	@9_µ	-		\		_)
-(deftemplate ext_r3	()	_		@bot	left	down	rght	pgdn	_		@/_ralt	@0_sft	@1_ctl	@2_alt	@3_met	_)
-(deftemplate ext_r4	()	@undo	@cut	@copy	@paste	@dup	@redo	grv		@+_±	@4_D	@5_E	@6_F	@._:)
+;;(deftemplate ext_r1	()	bspc	@¹_₁	@²_₂	@³_₃	@⁴_₄	@⁵_₅	@⁶_₆	@≤_≥	@⁷_₇	@⁸_₈	@⁹_₉	@⁰_₀	@≠_≈	_)
+;;(deftemplate ext_r2	()	_		@top	home	up		end		pgup	_		@*_×	@7_√	@8_∞	@9_µ	-		\		_)
+;;(deftemplate ext_r3	()	_		@bot	left	down	rght	pgdn	_		@/_ralt	@0_sft	@1_ctl	@2_alt	@3_met	_)
+;;(deftemplate ext_r4	()	@undo	@cut	@copy	@paste	@dup	@redo	grv		@+_±	@4_D	@5_E	@6_F	@._:)
 
 ;; Macro Numpad Rows
 (deftemplate mac_r0	()	_		_		_		_)
@@ -50,9 +64,3 @@
 (deftemplate mac_r3	()	@new	@edit	@save)
 (deftemplate mac_r4	()	@find	@repl	@sela	@selw)
 (deftemplate mac_r5	()	_				_)
-
-;; Advanced Colemak layout
-(deftemplate adv_r1 ()  _       @'_open @b_sym  @w_save	@f_edit	@p_new	_       _       @j_help	@l_rfsh	@u_prt	@y_svas	@j_help @__prnt)
-(deftemplate adv_r2 ()  esc		@a_met	@r_alt	@s_ctl	@t_sft	@g_ralt	@{_}   @lp_rp	@m_ralt	@n_sft	@e_ctl	@i_alt	@o_met	@cap)
-(deftemplate adv_r3 ()  @x_undo	@v_cut	@c_copy	@d_pst	@q_redo	@paste	@cut    @copy	@z_clos	@h_find	@k_repl	@,_sela	@._selw)
-(deftemplate adv_r4 ()  _       _       @os_lc  @ret_s  spc     @ext    S-tab   tab     bspc    @os_rs  @del_c  _)

@@ -20,26 +20,22 @@
 							(t! nav_r5)
 
 	f23
-	
-	ins ;;on Fn layer on 7540 keyboard
 )
 
 (deflayer (qwerty icon "..\assets\kanata.ico")
-	(t! trn_r0)				@col	@elk	_		_		_		_		_
+	(t! trn_r0)				@col	@col	_		_		_		_		_
 	(t! trn_r1)										bspc	_		_		_
 	(t! trn_r2)										(t! num_r2)
 	(t! trn_r3)										(t! num_r3)
 	(t! trn_r4)										(t! num_r4)
-	_	_	_	@spc_ext	_	_	home	_		end		(t! num_r5)
+	_	_	_	spc	_	_	home	_		end		(t! num_r5)
 							(t! nav_r5)
 
 	@trn
-
-	@adv
 )
 
 (deflayer (colemak icon "..\assets\colemak.png")
-	(t! trn_r0)				@elk	@qwe	prnt	_		_		_		_
+	(t! trn_r0)				@qwe	@qwe	prnt	_		_		_		_
 	(t! col_r1)										(t! mac_r1)
 	(t! col_r2)										(t! mac_r2)
 	(t! col_r3)										(t! mac_r3)
@@ -48,23 +44,43 @@
 							(t! nav_r5)
 
 	@trn
-
-	@adv
 )
 
-(deflayer (extend icon "..\assets\extend.png")
-	(t! trn_r0)				@col	@qwe	@adv	_		_		_		_
-	(t! ext_r1)										(t! mac_r1)
-	(t! ext_r2)										(t! mac_r2)
-	(t! ext_r3)										(t! mac_r3)
-	(t! ext_r4)										(t! mac_r4)
-	(t! col_r5)		@os_rs	home	_		end		(t! mac_r5)
+(deflayer (symbol icon "..\assets\colemak.png")
+	(t! trn_r0)				@qwe	@qwe	prnt	_		_		_		_
+	(t! sym_r1)										(t! mac_r1)
+	(t! sym_r2)										(t! mac_r2)
+	(t! sym_r3)										(t! mac_r3)
+	(t! sym_r4)										(t! mac_r4)
+	(t! sym_r5)		@os_rs	home	_		end		(t! mac_r5)
 							(t! nav_r5)
 
 	@trn
-
-	@adv
 )
+
+(deflayer (function icon "..\assets\colemak.png")
+	(t! trn_r0)				@qwe	@qwe	prnt	_		_		_		_
+	(t! fun_r1)										(t! mac_r1)
+	(t! fun_r2)										(t! mac_r2)
+	(t! fun_r3)										(t! mac_r3)
+	(t! fun_r4)										(t! mac_r4)
+	(t! fun_r5)		@os_rs	home	_		end		(t! mac_r5)
+							(t! nav_r5)
+
+	@trn
+)
+
+;;(deflayer (extend icon "..\assets\extend.png")
+;;	(t! trn_r0)				@col	@qwe	_		_		_		_		_
+;;	(t! ext_r1)										(t! mac_r1)
+;;	(t! ext_r2)										(t! mac_r2)
+;;	(t! ext_r3)										(t! mac_r3)
+;;	(t! ext_r4)										(t! mac_r4)
+;;	(t! col_r5)		@os_rs	home	_		end		(t! mac_r5)
+;;							(t! nav_r5)
+;;
+;;	@trn
+;;)
 
 (deflayer (transparent icon "..\assets\transparent.png")
 	(t! trn_r0)				_		_		_		_		_		_		_
@@ -76,20 +92,4 @@
 							(t! nav_r5)
 
 	_
-
-	_
-)
-
-(deflayer (advanced icon "..\assets\advanced.png")
-	(t! trn_r0)				@elk	@qwe	prnt	_		_		_		_
-	(t! adv_r1)										(t! mac_r1)
-	(t! adv_r2)										(t! mac_r2)
-	(t! adv_r3)										(t! mac_r3)
-	(t! adv_r4)										(t! mac_r4)
-	(t! col_r5)		@os_rs	home	_		end		(t! mac_r5)
-							(t! nav_r5)
-
-	@trn
-
-	@col
 )

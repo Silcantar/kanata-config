@@ -2,18 +2,19 @@
 ;; Layer Actions
 	qwe		(layer-switch qwerty)
 	col		(layer-switch colemak)
-	elk		(layer-switch extend)
+	;;elk		(layer-switch extend)
 	trn		(layer-switch transparent)
-	adv		(layer-switch advanced)
-	ext		(layer-while-held extend)
+	;;ext		(layer-while-held extend)
+	sym		(layer-while-held symbol)
+	fun		(layer-while-held function)
 
 
 ;; Caps word
-	cap		(caps-word-custom 5000 
+	cap		(caps-word-custom 5000
 				(a b c d e f g h i j k l m n o p q r s t u v w x y z)
 				(0 1 2 3 4 5 6 7 8 9 kp0 kp1 kp2 kp3 kp4 kp5 kp6 kp7 kp8 kp9 bspc del up down left rght - lsft)
 			)
-	
+
 ;; One-shots
 	os_la	(one-shot-press 2000 lalt)
 	os_ra	(one-shot-press 2000 ralt)
@@ -23,12 +24,17 @@
 	os_rm	(one-shot-press 2000 rmet)
 	os_ls	(one-shot-press 2000 lsft)
 	os_rs	(one-shot-press 2000 rsft)
-	
+	os_sym	(one-shot-press 2000 @sym)
+	os_fun	(one-shot-press 2000 @fun)
+
+
 ;; Shortcuts
 	top		C-home
 	s_top	C-S-home
 	bot		C-end
 	s_bot	C-S-end
+	wrdl	C-left
+	wrdr	C-rght
 	undo	C-z
 	redo	C-S-z
 	cut		C-x
@@ -44,7 +50,7 @@
 	save	C-s
 	edit	f2
 	new		C-n
-	sym		M-.
+	ins		M-.
 	help	f1
 	rfsh	f5
 	prt		C-p
@@ -72,4 +78,6 @@
 	>		S-.
 	?		S-/
 ;;	dq		S-'
+	~		S-`
+	|		S-\
 )
