@@ -38,14 +38,14 @@
 (deftemplate col_r5	()	XX		XX		XX						@os_sym					@os_fun)
 
 ;; Symbol Rows
-(deftemplate sym_r1	()	XX		@<_ins	@=_open	@[_save	@{_edit	@lp_new	@<_ins	XX		@>_help	@?_rfsh	@!_prt	@rpt_svas	@-_prnt	@>_help)
+(deftemplate sym_r1	()	XX		@<_ins	@=_open	@[_save	@{_edit	@lp_new	@<_ins	XX		@>_help	@?_rfsh	@!_prt	@&_‽	@-_prnt	@>_help)
 (deftemplate sym_r2	()	_		@7_met	@5_alt	@3_ctl	@1_sft	@\_ralt	XX		XX		@/_ralt	@0_sft	@2_ctl	@4_alt	@6_met	_)
 (deftemplate sym_r3	()	@^_undo	@#_cut	@*_copy	@9_pst	@%_redo	_		XX		XX		@dlr_clos	@8_find	@+_repl	_	_)
 (deftemplate sym_r4	()	XX		XX		_		_		_		_		XX		_		_		_		_		XX)
 (deftemplate sym_r5	()	XX		XX		XX						_						_)
 
 ;; Function Rows
-(deftemplate fun_r1	()	XX		@find	@wrdl	home	end		@wrdr	@find	XX		menu	f1		f4		f7		f10		menu)
+(deftemplate fun_r1	()	XX		prnt	@wrdl	home	end		@wrdr	prnt	XX		menu	f1		f4		f7		f10		menu)
 (deftemplate fun_r2	()	_		left	down	up		rght	@repl	XX		XX		pgup	@f2_sft	@f5_ctl	@f8_alt	@f11_met	_)
 (deftemplate fun_r3	()	@undo	@cut	@copy	@paste	@redo	_		XX		XX		pgdn	f3		f6		f9		f12)
 (deftemplate fun_r4	()	XX		XX		_		_		_		_		XX		_		_		_		_		XX)

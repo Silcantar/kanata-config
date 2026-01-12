@@ -1,1 +1,1 @@
-sudo ~/kanata-config/binary/kanata -c ~/kanata-config/config/rk65_Colemak_DHVK.kbd
+sudo ../binary/kanata -c ../config/rk65_Colemak_DHVK.kbd

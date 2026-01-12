@@ -51,10 +51,10 @@
 	lp_new		(tap-hold-release $tt1	$ht1	@lp_rp		@new)
 	<_ins		(tap-hold-release $tt1a $ht1a	@<_≤		@ins)
 
-	7_met		(tap-hold-release $tt4	$ht4	@7_‽		lmet)
+	7_met		(tap-hold-release $tt4	$ht4	@7_√		lmet)
 	5_alt		(tap-hold-release $tt3	$ht3	@5_€		lalt)
 	3_ctl		(tap-hold-release $tt2	$ht2	@3_`		lctl)
-	1_sft		(tap-hold-release $tt1	$ht1	@1_&		lsft)
+	1_sft		(tap-hold-release $tt1	$ht1	@1_–		lsft)
 	\_ralt		(tap-hold-release $tt1a	$ht1a	@\_µ		ralt)
 
 	^_undo		(tap-hold-release $tt4	$ht4	@^_°		@undo)
@@ -76,7 +76,7 @@
 	6_met		(tap-hold-release $tt4	$ht4	@6_|		rmet)
 
 	dlr_clos	(tap-hold-release $tt1a	$ht1a	@dlr_¢		@clos)
-	8_find		(tap-hold-release $tt1	$ht1	@8_–		@find)
+	8_find		(tap-hold-release $tt1	$ht1	@8_∞		@find)
 	+_repl		(tap-hold-release $tt2	$ht2	@+_±		@repl)
 ;;	,_sela		(tap-hold-release $tt3	$ht3	@,_;		@sela)
 ;;	._selw		(tap-hold-release $tt4	$ht4	@._:		@selw)
